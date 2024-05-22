@@ -1,0 +1,13 @@
+---
+- name: Create a user on all servers
+  hosts: all
+  become: yes
+  vars_files:
+    - user_vars.yml
+
+  tasks:
+    - name: Ensure the user is created
+      ansible.builtin.user:
+        name: "{{ username }}"
+        password: "{{ user_password }}"
+        state: present

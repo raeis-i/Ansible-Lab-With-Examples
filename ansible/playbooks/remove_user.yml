@@ -1,0 +1,10 @@
+---
+- name: Create a user on all servers
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Ensure the user is created
+      ansible.builtin.user:
+        name: "{{ username }}"
+        state: absent
