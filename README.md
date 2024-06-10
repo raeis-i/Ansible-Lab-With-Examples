@@ -16,7 +16,7 @@ You can find builtin modules [here](https://docs.ansible.com/ansible/latest/coll
 
 ## Installation
 ```bash
-$ git clone https://github.com/raeis-i/Ansible_Lab_With_Examples
+$ git clone https://github.com/raeis-i/Ansible-Lab-With-Examples.git
 $ cd Ansible_Lab_With_Examples
 $ vagrant up
 $ vagrant ssh node1
